@@ -8,7 +8,11 @@ def main():
         try:
             opcion = int(input("Seleccione una opción: ")) #Elije una opción
             
-            menus.ejecutar_opcion(opcion) #Ejecuta la opción escogida
+            if opcion == 5:
+                break
+            
+            else:
+                menus.ejecutar_opcion(opcion) #Ejecuta la opción escogida
                 
         except ValueError:
             print("Error: Debe ingresar un número válido.")
