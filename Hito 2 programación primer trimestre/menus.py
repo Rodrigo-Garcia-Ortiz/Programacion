@@ -46,10 +46,7 @@ def ejecutar_opcion(opcion):#Realiza la opción asignada
 
         case 4: #Muestra el número del pedido creado
             pedido = int(input("Introduce el ID del pedido deseado: "))
-            seleccionar_pedido(pedido) 
-
-        case 5: #Cierra la aplicación
-            return False 
-    
+            print(seleccionar_pedido(pedido))
+            
         case _: #Introduces un número sin opción asignada
             print("Opción inválida")
