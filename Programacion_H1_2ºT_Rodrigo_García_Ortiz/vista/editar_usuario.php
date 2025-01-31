@@ -3,12 +3,10 @@
 require_once '../controlador/usuariosController.php';
 $controller = new UsuariosController();
 
-// Obtener el ID del socio a editar desde el parámetro GET
+// Obtener el ID del usuario a editar desde el parámetro GET
 if (isset($_GET['id_usuario'])) {
     $id = $_GET['id_usuario'];
     $usuario = $controller->obtenerUsuarioPorId($id);
-
-    // Verificar si el socio existe
 }
 
 // Si se envió el formulario, procesar la edición
@@ -23,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $paquete = $_POST['paquete'];
     $duracion = $_POST['duracion'];
 
-    // Actualizar el socio usando el controlador
+    // Actualizar el usuario usando el controlador
     $resultado = $controller->actualizarUsuario($id_usuario, $nombre, $apellido, $correo, $telefono, $edad, $plan, $paquete, $duracion);
 }
 ?>
@@ -92,7 +90,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <option value="Mensual">Mensual</option>
                 <option value="Anual">Anual</option>
             </select>
-        <div class="mb-3"><br>
     </div>
         <button type="submit" class="btn btn-primary">Guardar Cambios</button>
     </form>

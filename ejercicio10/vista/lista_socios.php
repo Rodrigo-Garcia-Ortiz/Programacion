@@ -40,6 +40,6 @@ $socios = $controller->listarSocios();
         <?php endforeach; ?>
     </table>
     <br>
-    <a href="alta_socio.php" class = "btn btn-primary">Agregar un nuevo socio</a>
+    <a href="alta_socio.html" class = "btn btn-primary">Agregar un nuevo socio</a>
 </body>
 </html>
