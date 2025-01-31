@@ -6,7 +6,7 @@ class Conexion {
     private $base_datos = 'club_deportivo';
     public $conexion;
 
-    public function __construct() {
+    public function __construct() { //Se conecta a la base de datos
         $this->conexion = new mysqli($this->servidor, $this->usuario, $this->password, $this->base_datos);
 
         if ($this->conexion->connect_error) {

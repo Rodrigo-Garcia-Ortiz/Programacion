@@ -61,7 +61,7 @@ class Socio {
         $stmt->bind_param("i", $id_socio);
 
         if ($stmt->execute()) {
-            echo "Socio eliminado con éxito.";
+            header("Location: lista_socios.php");
         } else {
             echo "Error al eliminar socio: " . $stmt->error;
         }

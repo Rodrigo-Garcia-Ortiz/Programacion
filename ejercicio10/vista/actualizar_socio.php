@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <title>Agregar Socio</title>
+    <title>Actualizar Socio</title>
 </head>
 <body>
     <div class="container mt-4">
-        <h1>Agregar Socio</h1>
-        <form action = "agregar_socio.php" method = "POST"> 
+        <h1>Actualizar Socio</h1>
+        <form action = "editar_socio.php" method = "POST"> 
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label> 
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -30,7 +30,10 @@
                 <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento</label> 
                 <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
             </div>
-            <button type="submit" class="btn btn-primary">Agregar</button>
+            <div class="mb-3">
+                <input type="hidden"   name="opcion">
+            </div>
+            <button type="submit" class="btn btn-primary">Actualizar</button>
         </form>
     </div>
 </body>
