@@ -9,7 +9,7 @@
 <body>
     <div class="container mt-4"> <!-- Aquí se introduce el nombre de la receta a guardar -->
         <h1>Agregar Receta</h1>
-        <form action = "ia.php" method = "POST"> 
+        <form action = "ia copy.php" method = "POST"> 
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label> 
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
